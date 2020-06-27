@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Poem Analysis-Body Structure Outline</title>
+	<meta charset="UTF-8">
+	
+	<link rel="icon" 
+      type="imgs/png" 
+      href="imgs/favicon36.png">
+	
+    <link href="../css/Video-Player.css" rel="stylesheet">
+	<link href="../css/video-js_5.0.2.css" rel="stylesheet">
+	
+    <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.0.2/video.js"></script>
+	<script src="../js/videoControls.js"></script>
+</head>
+
+<body>
+
+ <div class="videoplayer">
+	<h1>Poem Analysis-Body Structure Outline</h1>
+  <video id="video" class="video-js vjs-default-skin vjs-16-9" autoplay controls preload="auto" data-setup="{}">
+	<source src="TV.Cieply.02.mp4" type="video/mp4">
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 MP4 format video</a>. You may use the download button below to download the video file to your local device.</p>
+  </video>
+  
+  <button id="rewind10" class="toolbar" title="Rewind 10 Seconds" onclick="skip(-10);"><img src="../imgs/10sec_backward-32.png"/></button>
+  <a id="menuLink" href="../index.html"><button id="menu" class="toolbar" title="Tutorial Videos Menu"><img src="../imgs/menu-32.png"/></button></a>
+  <a id="videoLink" target="_blank" href="TV.Cieply.02.mp4" onclick="pause();"><button id="download" class="toolbar" title="Download Video File"><img src="../imgs/download-32.png"/></button></a>
+  <a id="transcriptLink" target="_blank" href="TV.Cieply.02.pdf"><button id="transcript" class="toolbar" title="View Transcript (PDF)"><img src="../imgs/transcript-32.png"/></button></a>
+  <p id="copyright">&copy; EdisonLearning, Inc. All Rights Reserved.</p>
+ </div>
+
+</body>
+</html>
