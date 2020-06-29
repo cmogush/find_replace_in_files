@@ -1,5 +1,5 @@
 import unittest, os
-from find_replace_in_files import filetype_matches, make_replacements, move_files
+from find_replace_in_files import filetype_matches, make_replacements, move_files, write_log
 
 
 class MyTestCase(unittest.TestCase):
@@ -36,6 +36,17 @@ class MyTestCase(unittest.TestCase):
         destFile = r'C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\dest\final_dest\TV.Cieply.01.html'
         self.assertEqual(os.path.isfile(destFile), True)
         os.remove(destFile)
+
+    # test writing to log files
+    def test_write_log(self):
+        log = [r'C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\test files\TV.Cieply.01.html']
+        dir = r"C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\test files"
+        outfile = "change_log.txt"
+        write_log(log, dir, outfile)
+        destFile = r'C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\test files\change_log.txt'
+        self.assertEqual(os.path.isfile(destFile), True)
+        os.remove(destFile)
+
 
 if __name__ == '__main__':
     unittest.main()

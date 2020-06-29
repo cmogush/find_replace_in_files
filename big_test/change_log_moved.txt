@@ -1,4 +1,0 @@
-C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\big_test\TV.Cieply.01.html
-C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\big_test\TV.Cieply.02.html
-C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\big_test\TV.Conway.01.html
-C:\Users\Chris\Desktop\Python Scripts\find_replace_in_files\big_test\TV.Conway.02.html
